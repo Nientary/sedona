@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария Санина](https://up.htmlacademy.ru/adaptive/11/user/228509).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Иванец] (https://htmlacademy.ru/profile/id155879).
 
 ---
 
