@@ -37,9 +37,16 @@ textarea {
 }
 
 input,
-input[placeholder],
-textarea[placeholder] {
+textarea {
   .bigger-font;
   font-weight: bold;
+  color: #000000;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+input:-moz-placeholder {
   color: #000000;
 }
