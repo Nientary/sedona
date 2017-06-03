@@ -29,7 +29,7 @@
 
 @base-font-color: #333333;
 
-.base-font {
+.base-font() {
   font-family: @font-family;
   font-size: @base-font-size;
   line-height: @base-lh;
@@ -38,22 +38,22 @@
   text-transform: uppercase;
 }
 
-.bigger-font {
+.bigger-font() {
   font-size: @font-size-bigger;
   line-height: @lh-bigger;
 }
 
 body {
-.base-font;
+.base-font();
 }
 
 h1,
 h2 {
-  .bigger-font;
+  .bigger-font();
   font-weight: bold;
   color: #000000;
 }
 
 a {
-  .base-font;
+  .base-font();
 }
