@@ -1,0 +1,46 @@
+.link {
+  background-color: @blue;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    background-color: @blue-hover;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @blue-active;
+  }
+  &--disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.input-bg {
+  background-color: @gray;
+  &:hover {
+    background-color: @gray-hover;
+  }
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
+}
+
+.standard-block {
+  .paddings-lr;
+  text-align: center;
+}
+
+.anti-collapse {
+  padding-top: 1px;
+}
+
+.paddings-lr(@left: 20px; @right: 20px) {
+  padding-left: @left;
+  padding-right: @right;
+}
+
+.paddings-tb(@top; @bottom) {
+  padding-top: @top;
+  padding-bottom: @bottom;
+}
