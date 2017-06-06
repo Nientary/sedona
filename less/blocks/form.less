@@ -1,4 +1,4 @@
-form {
+.form {
   padding-bottom: 40px;
 }
 
@@ -8,8 +8,10 @@ form {
 
 .form__group {
   margin-top: -1px;
-  .paddings-lr();
-  .paddings-tb(18px; 25px);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 25px;
   border-top: @inner-border;
   border-bottom: @inner-border;
 }
@@ -20,33 +22,8 @@ form {
 
 .form__group-title {
   margin: 0;
-  .bigger-font();
-  text-align: center;
-  font-weight: bold;
-}
-
-label {
+  font-size: 18px;
   line-height: 26px;
-}
-
-input,
-textarea {
-  .paddings-lr(22px; 5px);
-  border: none;
-  .input-bg();
-}
-
-input,
-textarea {
-  .bigger-font();
-  font-weight: bold;
-  color: #000000;
-}
-
-input::-webkit-input-placeholder {
-  color: #000000;
-}
-
-input:-moz-placeholder {
-  color: #000000;
+  text-align: center;
+  font-weight: 700;
 }
