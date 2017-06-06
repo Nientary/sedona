@@ -1,0 +1,31 @@
+.link() {
+  background-color: @main-color;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    background-color: @main-color-hover;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @main-color-active;
+  }
+  &--disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.input-bg() {
+  background-color: @input-color;
+  &:hover {
+    background-color: @input-color-hover;
+  }
+  &:active {
+    background-color: @input-color-active;
+  }
+} /*по-моему, это удобно, потому что такие состояния будут не только у полей ввода, но и у кастомных элементов двух типов*/
+
+.font-big() {
+  font-size: @font-size-bigger;
+  line-height: @lh-bigger;
+}
