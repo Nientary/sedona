@@ -29,3 +29,11 @@
   font-size: @font-size-bigger;
   line-height: @lh-bigger;
 }
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

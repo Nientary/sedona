@@ -1,7 +1,6 @@
 .feature {
   padding-left: 50px;
-  padding-top: 16px;
-  padding-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .feature__title {
@@ -11,4 +10,37 @@
 .feature__text {
   margin: 0;
   line-height: 21px;
+}
+
+@media @tablet-widths {
+  .feature {
+    width: 256px;
+    padding-left: 0;
+    padding-top: 136px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .feature__text {
+    width: 163px;
+    margin: 0 auto;
+  }
+  .feature--housing {
+    order: 1;
+  }
+  .feature--souvenirs {
+    order: 3;
+  }
+  .feature--food {
+    order: 2;
+  }
+  .feature--food .feature__text {
+    width: 155px;
+  }
+}
+
+@media @desktop-widths {
+  .feature {
+    width: 400px;
+    padding-bottom: 40px;
+  }
 }

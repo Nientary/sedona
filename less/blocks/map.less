@@ -12,6 +12,30 @@
 }
 
 .map__canvas {
+  min-height: 350px;
   background: #f4f3f0 url("../img/bg-map-mobile@1x.jpg") no-repeat center;
+}
+
+.map__canvas iframe {
+  width: 100%;
   border: none;
+}
+
+@media @tablet-widths {
+  .map__booking {
+    padding-bottom: 55px;
+  }
+  .map__title {
+    font-size: 30px;
+  }
+  .map__text {
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media @desktop-widths {
+  .map__booking {
+    padding-bottom: 63px;
+  }
 }

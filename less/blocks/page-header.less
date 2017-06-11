@@ -1,1 +1,38 @@
+.page-header__wrapper {
+  position: relative;
+  padding-bottom: 56px;
+}
 
+.page-header__logo {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 21px;
+  overflow: hidden;
+}
+
+@media @tablet-widths {
+  .page-header__wrapper {
+    padding-bottom: 0;
+  }
+}
+
+@media @tablet-widths {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .page-header__logo {
+    top: 0;
+  }
+}
