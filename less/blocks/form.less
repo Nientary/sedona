@@ -14,8 +14,8 @@
   padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  border-top: @inner-border;
-  border-bottom: @inner-border;
+  border-top: @main-border;
+  border-bottom: @main-border;
 }
 
 .form__group--user .text-field {
@@ -60,26 +60,31 @@
     padding-right: 60px;
     padding-top: 5px;
   }
+
   .form__group {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
     border: none;
   }
+
   .form__group-title {
     font-size: 21px;
   }
+
   .form__group--impression {
     order: -1;
     width: 323px;
     padding-top: 0;
     padding-bottom: 0;
-    border-right: @inner-border;
+    border-right: @main-border;
     margin-bottom: 54px;
   }
+
   .form__group--impression .form__group-title {
     text-align: left;
   }
+
   .form__group--user {
     display: flex;
     justify-content: flex-end;
@@ -90,9 +95,11 @@
     margin-bottom: 54px;
     padding-left: 58px;
   }
+
   .form__group--user .form__group-title {
     margin-right: auto;
   }
+
   .form__group--contacts .form__group-title,
   .form__group--places .form__group-title,
   .form__group--emotions .form__group-title {
@@ -107,48 +114,61 @@
       height: 1px;
       background-color: #dbdbdb;
     }
+
     &::before {
       left: 0;
     }
+
     &::after {
       right: 0;
     }
   }
+
   .form__group--contacts {
     margin-bottom: 11px;
   }
+
   .form__group--places {
     margin-bottom: 20px;
   }
+
   .form__group--places .form__group-inner {
     display: flex;
     flex-wrap: wrap;
     width: 460px;
     margin: 0 auto;
   }
+
   .form__group-title-inner {
     display: block;
     width: 320px;
     margin: 0 auto;
   }
+
   .form__group--places .checkbox-item {
     width: 50%;
   }
+
   .form__group--places .checkbox-item:first-child {
     order: 1;
   }
+
   .form__group--places .checkbox-item:nth-child(2) {
     order: 3;
   }
+
   .form__group--places .checkbox-item:nth-child(3) {
     order: 2;
   }
+
   .form__group--places .checkbox-item:nth-child(4) {
     order: 4;
   }
+
   .form__btn {
     margin-left: 0;
   }
+
   .form__footnote {
     display: block;
     margin-left: auto;
@@ -159,10 +179,12 @@
   .form {
     padding-bottom: 65px;
   }
+
   .form__wrapper {
     padding-left: 120px;
     padding-right: 120px;
   }
+
   .form__group--contacts .form__group-title,
   .form__group--places .form__group-title,
   .form__group--emotions .form__group-title {
@@ -171,43 +193,54 @@
       width: 280px;
     }
   }
+
   .form__group--impression {
     width: 480px;
     margin-bottom: 50px;
   }
+
   .form__group--user {
     width: 400px;
     padding-left: 79px;
     margin-bottom: 50px;
   }
+
   .form__group--user .text-field {
     width: 400px;
   }
+
   .form__group--user .form__group-title {
     margin-left: 0;
   }
+
   .form__group--contacts .form__group-inner {
     display: flex;
   }
+
   .form__group--contacts .text-field {
     display: flex;
     width: 480px;
   }
+
   .form__group--contacts .text-field:first-child {
     width: 400px;
     padding-right: 80px;
   }
+
   .form__group--contacts .text-field__label {
     flex-shrink: 0;
     margin-right: 16px;
   }
+
   .form__group--contacts .text-field__input {
     flex-grow: 1;
     min-width: 315px;
   }
+
   .form__group--places .form__group-inner {
     width: 100%;
   }
+
   .form__group--places .form__checkbox-item {
     width: 25%;
   }

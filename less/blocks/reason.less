@@ -12,7 +12,7 @@
   background-color: @main-color;
 }
 
-.reason--with-triangle .reason__about {
+.reason--first .reason__about {
   padding-top: 80px;
   background-color: @main-color;
   background-image: url("../img/bg-triangle.svg");
@@ -52,17 +52,20 @@
 }
 
 @media @tablet-widths {
-  .reason--with-triangle .reason__about {
+  .reason--first .reason__about {
     padding-top: 48px;
     background-image: none;
   }
+
   .reason {
     display: flex;
     width: 100%;
   }
+
   .reason--secondary {
     width: 256px;
   }
+
   .reason__about,
   .reason--secondary .reason__about {
     width: 216px;
@@ -71,6 +74,7 @@
     margin-right: 0;
     margin-left: 0;
   }
+
   .reason__photo {
     width: 512px;
     outline: 1px solid black; /*временно*/
@@ -81,13 +85,16 @@
   .reason--secondary {
     width: 400px;
   }
+
   .reason__about,
   .reason--secondary .reason__about {
     width: 380px;
   }
+
   .reason__photo {
     width: 800px;
   }
+
   .reason:nth-child(3) .reason__photo {
     order: -1;
   }
