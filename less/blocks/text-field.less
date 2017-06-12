@@ -1,4 +1,6 @@
 .text-field__input {
+  box-sizing: border-box;
+  width: 100%;
   padding-left: 22px;
   padding-right: 10px;
   border: none;
@@ -27,4 +29,20 @@
 
 .text-field__input::-moz-placeholder {
   color: #000000;
+}
+
+.text-field__input {
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.text-field__input--textarea {
+  height: 160px;
+  resize: none;
+}
+
+@media @desktop-widths {
+  .text-field__label-part {
+    display: none;
+  }
 }

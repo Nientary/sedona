@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="page-wrapper">
@@ -34,13 +35,13 @@
       <div class="promo">
         <img class="promo__img" src="img/text-sedona.svg" alt="Sedona">
       </div>
-      <section class="intro intro--top">
+      <section class="intro intro--inner intro--form">
         <h1 class="intro__title">Оставьте свой отзыв</h1>
         <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="form form--review">
-        <div class="form__wrapper">
-          <form action="https://echo.htmlacademy.ru/" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__wrapper">
             <div class="form__group form__group--user">
               <h2 class="form__group-title">Представьтесь:</h2>
               <div class="text-field form__text-field">
@@ -58,13 +59,15 @@
             </div>
             <div class="form__group form__group--contacts">
               <h2 class="form__group-title">Контактная информация:</h2>
-              <div class="text-field form__text-field text-field--tel">
-                <label class="text-field__label" for="tel-number">Контактный телефон*:</label>
-                <input class="text-field__input text-field__input--wide text-field__input--tel" id="tel-number" name="tel-number" type="tel" placeholder="Введите телефон" required>
-              </div>
-              <div class="text-field form__text-field text-field--email">
-                <label class="text-field__label" for="email">Электронная почта*:</label>
-                <input class="text-field__input text-field__input--wide text-field__input--email" id="email" name="email" type="email" placeholder="Введите емейл" required>
+              <div class="form__group-inner">
+                <div class="text-field form__text-field text-field--tel">
+                  <label class="text-field__label" for="tel-number"><span class="text-field__label-part">Контактный</span> телефон*:</label>
+                  <input class="text-field__input text-field__input--wide text-field__input--tel" id="tel-number" name="tel-number" type="tel" placeholder="Введите телефон" required>
+                </div>
+                <div class="text-field form__text-field text-field--email">
+                  <label class="text-field__label" for="email">Электронная почта*:</label>
+                  <input class="text-field__input text-field__input--wide text-field__input--email" id="email" name="email" type="email" placeholder="Введите емейл" required>
+                </div>
               </div>
             </div>
             <div class="form__group form__group--impression">
@@ -82,23 +85,25 @@
                 <label class="radio-item__label" for="hard-to-tell">Затрудняюсь ответить</label>
               </div>
             </div>
-            <div class="form__group review-form__group--places">
-              <h2 class="form__group-title">Посещённые достопримечательности:</h2>
-              <div class="checkbox-item form__checkbox-item">
-                <input class="checkbox-item__input" type="checkbox" id="bridge" name="bridge" checked>
-                <label class="checkbox-item__label" for="bridge">Мост Дьявола</label>
-              </div>
-              <div class="checkbox-item form__checkbox-item">
-                <input class="checkbox-item__input" type="checkbox" id="park" name="park" checked>
-                <label class="checkbox-item__label" for="park">Слайд-парк</label>
-              </div>
-              <div class="checkbox-item form__checkbox-item">
-                <input class="checkbox-item__input" type="checkbox" id="mountain" name="mountain">
-                <label class="checkbox-item__label" for="mountain">Гора-Колокол</label>
-              </div>
-              <div class="checkbox-item form__checkbox-item">
-                <input class="checkbox-item__input" type="checkbox" id="rocks" name="rocks" checked>
-                <label class="checkbox-item__label" for="rocks">Красные скалы</label>
+            <div class="form__group form__group--places">
+              <h2 class="form__group-title"><span class="form__group-title-inner">Посещенные достопримечательности:</span></h2>
+              <div class="form__group-inner">
+                <div class="checkbox-item form__checkbox-item">
+                  <input class="checkbox-item__input" type="checkbox" id="bridge" name="bridge" checked>
+                  <label class="checkbox-item__label" for="bridge">Мост Дьявола</label>
+                </div>
+                <div class="checkbox-item form__checkbox-item">
+                  <input class="checkbox-item__input" type="checkbox" id="park" name="park" checked>
+                  <label class="checkbox-item__label" for="park">Слайд-парк</label>
+                </div>
+                <div class="checkbox-item form__checkbox-item">
+                  <input class="checkbox-item__input" type="checkbox" id="mountain" name="mountain">
+                  <label class="checkbox-item__label" for="mountain">Гора-Колокол</label>
+                </div>
+                <div class="checkbox-item form__checkbox-item">
+                  <input class="checkbox-item__input" type="checkbox" id="rocks" name="rocks" checked>
+                  <label class="checkbox-item__label" for="rocks">Красные скалы</label>
+                </div>
               </div>
             </div>
             <div class="form__group form__group--emotions">
@@ -108,8 +113,9 @@
               </div>
             </div>
             <button class="btn form__btn" type="submit">Отправить отзыв</button>
-          </form>
-        </div>
+            <span class="form__footnote">* — обязательные поля</span>
+          </div>
+        </form>
       </section>
       <footer class="page-footer">
         <p class="page-footer__hashtag">
