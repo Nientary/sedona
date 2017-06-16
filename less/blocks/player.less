@@ -7,8 +7,8 @@
 .player__volume-block {
   position: relative;
   z-index: 10;
-  height: 45px;
-  margin-top: -53px;
+  height: 44px;
+  margin-top: -51px;
   padding-top: 1px;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -22,11 +22,22 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.player__volume-toggle {
+  position: absolute;
+  left: 58px;
+  top: 50%;
+  margin-top: -4.5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
 .player__buttons {
   display: flex;
   align-items: center;
   width: 232px;
-  height: 44px;
+  height: 66px;
   padding-left: 25px;
   padding-right: 23px;
   background-color: #f2f2f2;
@@ -38,7 +49,13 @@
 
 .player__btn {
   height: 20px;
-  overflow: hidden; /*временно*/
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  outline: 1px solid red;
 }
 
 .player__btn--replay {
@@ -51,6 +68,7 @@
 
 .player__btn--full {
   width: 20px;
+  margin-left: 27px;
 }
 
 @media @tablet-widths {
@@ -70,8 +88,7 @@
   .player__volume-block {
     position: absolute;
     bottom: 45px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 93px;
     z-index: 10;
     height: 3px;
     padding-bottom: 0;
@@ -81,6 +98,10 @@
   .player__volume-scale {
     width: 389px;
     margin-top: 0;
+  }
+
+  .player__volume-toggle {
+    left: 113px;
   }
 
   .player__buttons {

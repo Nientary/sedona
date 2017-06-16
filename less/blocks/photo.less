@@ -4,13 +4,26 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 22px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   border-top: @main-border;
   border-bottom: @main-border;
 }
 
+.photo:nth-child(3),
+.photo:nth-child(4) {
+  padding-top: 24px;
+}
+
 .photo__link {
   display: block;
+}
+
+.photo__about {
+  padding-top: 8px;
+}
+
+.photo__col {
+  margin-bottom: 8px;
 }
 
 .photo__title {
@@ -25,7 +38,20 @@
 }
 
 .photo__likes {
+  display: flex;
+  align-items: center;
   margin: 0;
+}
+
+.photo__likes-btn {
+  display: block;
+  width: 22px;
+  height: 21px;
+  margin-right: 15px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: 1px solid red;
 }
 
 .photo__likes-count {
@@ -50,11 +76,13 @@
     outline: 1px solid red; /*временно*/
   }
 
-  .photo__img {
-    display: block;
+  .photo:nth-child(3),
+  .photo:nth-child(4) {
+    padding-top: 0;
   }
 
   .photo__img {
+    display: block;
     height: 267px;
   }
 
@@ -65,11 +93,24 @@
   .photo__about {
     display: flex;
     align-items: center;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 15px;
+    padding-bottom: 18px;
     padding-left: 20px;
     padding-right: 30px;
     background-color: #f2f2f2;
+    outline: 1px solid blue;
+  }
+
+  .photo--big .photo__about {
+    padding-right: 20px;
+  }
+
+  .photo:nth-child(3) .photo__about {
+    padding-right: 36px;
+  }
+
+  .photo__col {
+    margin-bottom: 0;
   }
 
   .photo__title {
@@ -82,6 +123,10 @@
 
   .photo__likes {
     margin-left: auto;
+  }
+
+  .photo__likes-btn {
+    margin-right: 10px;
   }
 }
 
@@ -99,7 +144,7 @@
   .photo__about {
     position: relative;
     z-index: 1;
-    margin-top: -49px;
+    margin-top: -81px;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.3);
   }
