@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--no-js page-header--menu-closed">
         <div class="page-header__wrapper">
           <nav class="main-nav">
             <ul class="main-nav__list">
@@ -27,7 +27,7 @@
             </ul>
           </nav>
           <a class="page-header__logo" href="index.html">
-            <img src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+            <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Логотип Седоны">
           </a>
           <button class="page-header__toggle" type="button">Открыть/закрыть меню</button>
         </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="text-field form__text-field text-field--email">
                   <label class="text-field__label" for="email">Электронная почта*:</label>
-                  <input class="text-field__input text-field__input--wide text-field__input--email" id="email" name="email" type="email" placeholder="Введите емейл" required>
+                  <input class="text-field__input text-field__input--wide text-field__input--email" id="email" name="email" type="email" placeholder="Введите e-mail" required>
                 </div>
               </div>
             </div>
@@ -148,5 +148,6 @@
       </p>
       <button class="popup__btn btn" type="button">Закрыть окно</button>
     </div>
+    <script src="js/menu.js"></script>
   </body>
 </html>

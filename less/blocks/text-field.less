@@ -1,6 +1,12 @@
+.text-field {
+  align-items: center;
+}
+
 .text-field__input {
   box-sizing: border-box;
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 17px;
   padding-left: 22px;
   padding-right: 10px;
   border: none;
@@ -12,6 +18,9 @@
   &:focus {
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
+  }
+  &--invalid {
+    outline: 4px solid #ff4444; /*Сделаю с помощью JS*/
   }
 }
 
@@ -37,6 +46,7 @@
 }
 
 .text-field__input--textarea {
+  padding-top: 17px;
   height: 160px;
   resize: none;
 }

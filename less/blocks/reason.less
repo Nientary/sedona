@@ -13,7 +13,7 @@
 }
 
 .reason--first .reason__about {
-  padding-top: 80px;
+  padding-top: 78px;
   background-color: @main-color;
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 
 .reason--secondary .reason__about {
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 29px;
   color: @base-font-color;
   background-color: #eeeeee;
   border-bottom: 1px solid #d6d6d6;
@@ -33,8 +33,13 @@
   border: none;
 }
 
+.reason--first .reason__title {
+  margin-bottom: 8px;
+}
+
 .reason__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 7px;
   color: #ffffff;
 }
 
@@ -47,19 +52,81 @@
   line-height: 21px;
 }
 
+.reason--secondary .reason__text {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.reason__number {
+  position: relative;
+  display: block;
+  margin-bottom: 13px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  &::before {
+    left: 50%;
+    margin-left: -25px;
+  }
+  &::after {
+    right: 50%;
+    margin-right: -25px;
+  }
+}
+
+.reason--first .reason__number {
+  margin-bottom: 14px;
+}
+
+.reason--secondary .reason__number {
+  &::before,
+  &::after {
+    background-color: #979797;
+  }
+}
+
 .reason__img {
   display: block;
 }
 
 @media @tablet-widths {
-  .reason--first .reason__about {
-    padding-top: 48px;
-    background-image: none;
-  }
-
   .reason {
     display: flex;
     width: 100%;
+  }
+
+  .reason__title {
+    width: 151px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .reason__number {
+    margin-bottom: 18px;
+  }
+
+  .reason--first .reason__about {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    background-image: none;
+  }
+
+  .reason--first .reason__title {
+    margin-bottom: 10px;
+  }
+
+  .reason--first .reason__number {
+    margin-bottom: 20px;
   }
 
   .reason--secondary {
@@ -69,26 +136,70 @@
   .reason__about,
   .reason--secondary .reason__about {
     width: 216px;
-    padding-top: 48px;
+    padding-top: 44px;
     padding-bottom: 47px;
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .reason--secondary .reason__about {
+    padding-bottom: 45px;
+  }
+
+  .reason__text {
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reason--secondary .reason__text {
+    width: 158px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .reason__photo {
     width: 512px;
     outline: 1px solid black; /*временно*/
   }
+
+  .reason__img {
+    height: 256px;
+  }
 }
 
 @media @desktop-widths {
+  .reason__about {
+    padding-top: 50px;
+  }
+
+  .reason--first .reason__about {
+    padding-top: 51px;
+  }
+
+  .reason__text {
+    width: 215px;
+  }
+
+  .reason--first .reason__text {
+    width: 270px;
+  }
+
+  .reason--secondary .reason__text {
+    width: 285px;
+  }
+
   .reason--secondary {
     width: 400px;
   }
 
   .reason__about,
   .reason--secondary .reason__about {
-    width: 380px;
+    width: 360px;
+  }
+
+  .reason--secondary .reason__about {
+    padding-bottom: 65px;
   }
 
   .reason__photo {

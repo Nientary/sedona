@@ -1,7 +1,23 @@
 .btn {
+  display: block;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 17px;
   .link();
   border: none;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+@media @tablet-widths {
+  .btn {
+    max-width: 458px;
+  }
+}
+
+@media @desktop-widths {
+  .btn {
+    max-width: 500px;
+  }
 }
