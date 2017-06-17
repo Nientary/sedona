@@ -9,11 +9,6 @@
   border-bottom: @main-border;
 }
 
-.photo:nth-child(3),
-.photo:nth-child(4) {
-  padding-top: 24px;
-}
-
 .photo__link {
   display: block;
 }
@@ -76,10 +71,9 @@
     outline: 1px solid red; /*временно*/
   }
 
-  .photo:nth-child(3),
-  .photo:nth-child(4) {
-    padding-top: 0;
-  }
+  /*.photo--big .photo__likes {
+    width: auto;
+  }*/
 
   .photo__img {
     display: block;
@@ -96,17 +90,9 @@
     padding-top: 15px;
     padding-bottom: 18px;
     padding-left: 20px;
-    padding-right: 30px;
+    padding-right: 21px;
     background-color: #f2f2f2;
     outline: 1px solid blue;
-  }
-
-  .photo--big .photo__about {
-    padding-right: 20px;
-  }
-
-  .photo:nth-child(3) .photo__about {
-    padding-right: 36px;
   }
 
   .photo__col {
@@ -123,6 +109,8 @@
 
   .photo__likes {
     margin-left: auto;
+    justify-content: flex-start;
+    width: 63px;
   }
 
   .photo__likes-btn {
