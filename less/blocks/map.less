@@ -18,7 +18,7 @@
 }
 
 .map__canvas {
-  min-height: 350px;
+  height: 350px;
   background-color: #f4f3f0;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -60,14 +60,15 @@
   .map__canvas {
     background-image: url("../img/bg-map-tablet@1x.jpg");
   }
+}
 
-  @media (min-resolution: 144dpi),
-         (min-resolution: 1.5dppx) {
-    .map__canvas {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
-    }
+@media (min-width: 768px) and (min-resolution: 144dpi),
+       (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .map__canvas {
+    background-image: url("../img/bg-map-tablet@2x.jpg");
   }
 }
+
 
 @media @desktop-widths {
   .map__booking {
@@ -81,11 +82,11 @@
   .map__canvas {
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
+}
 
-  @media (min-resolution: 144dpi),
-         (min-resolution: 1.5dppx) {
-    .map__canvas {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
-    }
+@media (min-width: 1200px) and (min-resolution: 144dpi),
+       (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .map__canvas {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
   }
 }
