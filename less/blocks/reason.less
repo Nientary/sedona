@@ -64,6 +64,7 @@
   position: relative;
   display: block;
   margin-bottom: 13px;
+
   &::before,
   &::after {
     content: "";
@@ -73,10 +74,12 @@
     height: 2px;
     background-color: #ffffff;
   }
+
   &::before {
     left: 50%;
     margin-left: -25px;
   }
+
   &::after {
     right: 50%;
     margin-right: -25px;
@@ -160,7 +163,6 @@
 
   .reason__photo {
     width: 512px;
-    outline: 1px solid black; /*временно*/
   }
 
   .reason__img {
@@ -204,6 +206,11 @@
 
   .reason__photo {
     width: 800px;
+  }
+
+  .reason__img {
+    width: 800px;
+    object-fit: cover;
   }
 
   .reason:nth-child(3) .reason__photo {

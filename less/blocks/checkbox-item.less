@@ -15,10 +15,6 @@
   display: none;
 }
 
-.checkbox-item__input:checked ~ .checkbox-item__label::after {
-  display: block;
-}
-
 .checkbox-item__label::before {
   content: "";
   display: block;
@@ -29,15 +25,16 @@
   border-radius: 4px;
 }
 
-.checkbox-item__label::after {
-  content: "";
+.checkbox__icon {
   position: absolute;
+  z-index: 3;
   left: 17px;
   top: 20px;
   display: none;
-  width: 24px;
-  height: 16px;
-  outline: 1px solid red;
+}
+
+.checkbox-item__input:checked ~ .checkbox-item__label .checkbox__icon {
+  display: block;
 }
 
 .checkbox-item__label:hover {

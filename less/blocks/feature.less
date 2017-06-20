@@ -1,12 +1,28 @@
 .feature {
-  padding-top: 9px;
+  position: relative;
   padding-left: 50px;
+  padding-top: 9px;
   margin-bottom: 19px;
-  outline: 1px solid red;
+}
+
+.feature__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: @main-color;
 }
 
 .feature--food {
   padding-top: 11px;
+}
+
+.feature--souvenirs .feature__icon {
+  left: 4px;
+}
+
+.feature--food .feature__icon {
+  top: 5px;
+  left: -1px;
 }
 
 .feature__title {
@@ -26,6 +42,31 @@
     padding-top: 136px;
     padding-bottom: 20px;
     text-align: center;
+  }
+
+  .feature__icon,
+  .feature--souvenirs .feature__icon,
+  .feature--food .feature__icon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .feature--housing .feature__icon {
+    top: 38px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .feature--souvenirs .feature__icon {
+    top: 35px;
+    width: 64px;
+    height: 75px;
+  }
+
+  .feature--food .feature__icon {
+    top: 41px;
+    width: 77px;
+    height: 68px;
   }
 
   .feature__title {

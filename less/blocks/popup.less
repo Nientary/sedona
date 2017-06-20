@@ -3,7 +3,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
-  z-index: 1;
+  z-index: 4;
   display: none;
   width: 280px;
   margin: 0 auto;
@@ -51,13 +51,14 @@
 
 .popup--success .popup__btn {
   position: relative;
-  z-index: 3;
+  z-index: 6;
   width: 280px;
 }
 
 .popup--success::after {
   content: "";
   position: absolute;
+  z-index: 5;
   left: 0;
   bottom: 0;
   width: 100%;
