@@ -1,32 +1,45 @@
+.player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.player__content {
+  display: block;
+}
+
 .player__controls {
+  position: absolute;
+  bottom: -67px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .player__volume-block {
   position: relative;
-  z-index: 10;
+  width: 100%;
   height: 44px;
-  margin-top: -51px;
-  padding-top: 1px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .player__volume-scale {
+  position: absolute;
+  top: 21px;
+  left: 20px;
+  right: 20px;
   width: 235px;
   height: 3px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 21px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .player__volume-toggle {
   position: absolute;
   left: 58px;
-  top: 50%;
-  margin-top: -4.5px;
+  top: 18px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -34,18 +47,21 @@
   cursor: pointer;
 }
 
-.player__buttons {
+.player__col {
   display: flex;
   align-items: center;
-  width: 232px;
   height: 66px;
-  padding-left: 25px;
-  padding-right: 23px;
   background-color: #f2f2f2;
 }
 
-.player__col:first-child {
-  margin-right: auto;
+.player__col--left {
+  width: 16px;
+  padding-left: 25px;
+  flex-grow: 1;
+}
+
+.player__col--right {
+  min-width: 107px;
 }
 
 .player__btn {
@@ -69,7 +85,7 @@
 
 .player__btn--full {
   width: 20px;
-  margin-left: 27px;
+  margin-left: 33px;
 }
 
 .player__icon {
@@ -97,37 +113,50 @@
   }
 
   .player__controls {
-    position: relative;
+    bottom: 0;
     width: 648px;
-    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
   }
 
   .player__volume-block {
-    position: absolute;
-    bottom: 45px;
-    left: 93px;
-    z-index: 10;
+    order: 2;
+    align-self: center;
+    position: relative;
+    width: 389px;
     height: 3px;
-    padding-bottom: 0;
     background: none;
   }
 
   .player__volume-scale {
+    left: 0;
+    top: 0;
     width: 389px;
-    margin-top: 0;
   }
 
   .player__volume-toggle {
+    top: -3px;
     left: 113px;
   }
 
-  .player__buttons {
-    width: 572px;
+  .player__col {
+    flex-grow: 0;
     height: 93px;
-    margin-top: -93px;
+    background-color: transparent;
+  }
+
+  .player__col--left {
+    order: 1;
     padding-left: 35px;
-    padding-right: 41px;
-    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .player__col--right {
+    order: 3;
+    width: 124px;
+  }
+
+  .player__btn--full {
+    margin-left: 32px;
   }
 
   .player__icon {
@@ -151,8 +180,8 @@
     width: 800px;
   }
 
-  .player__buttons {
-    width: 723px;
+  .player__volume-block {
+    width: 540px;
   }
 
   .player__volume-scale {
