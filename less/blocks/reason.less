@@ -107,6 +107,10 @@
     width: 100%;
   }
 
+  .reason__about {
+    height: 165px;
+  }
+
   .reason__title {
     width: 151px;
     margin-left: auto;
@@ -119,6 +123,7 @@
   }
 
   .reason--first .reason__about {
+    height: 168px;
     padding-top: 44px;
     padding-bottom: 44px;
     background-image: none;
@@ -146,6 +151,7 @@
   }
 
   .reason--secondary .reason__about {
+    height: auto;
     padding-bottom: 45px;
   }
 
@@ -172,10 +178,12 @@
 
 @media @desktop-widths {
   .reason__about {
+    height: 159px;
     padding-top: 50px;
   }
 
   .reason--first .reason__about {
+    height: 161px;
     padding-top: 51px;
   }
 
@@ -202,15 +210,23 @@
 
   .reason--secondary .reason__about {
     padding-bottom: 65px;
+    height: auto;
   }
 
   .reason__photo {
     width: 800px;
+    height: 256px;
+    overflow: hidden;
   }
 
   .reason__img {
     width: 800px;
-    object-fit: cover;
+    height: 400px;
+    transform: translateY(-78px);
+  }
+
+  .reason:first-child .reason__img {
+    transform: translateY(-70px);
   }
 
   .reason:nth-child(3) .reason__photo {
