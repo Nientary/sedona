@@ -109,6 +109,7 @@
 
   .reason__about {
     height: 165px;
+    overflow: hidden;
   }
 
   .reason__title {
@@ -174,6 +175,10 @@
   .reason__img {
     height: 256px;
   }
+
+  .reason:nth-child(3) .reason__photo {
+    order: -1;
+  }
 }
 
 @media @desktop-widths {
@@ -227,9 +232,5 @@
 
   .reason:first-child .reason__img {
     transform: translateY(-70px);
-  }
-
-  .reason:nth-child(3) .reason__photo {
-    order: -1;
   }
 }

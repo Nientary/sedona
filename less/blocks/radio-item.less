@@ -35,7 +35,7 @@
   }
 }
 
-.radio-item__label:hover:active {
+.radio-item__label:active {
   &::before {
     background-color: @input-color-active;
   }
@@ -54,6 +54,23 @@
   width: 22px;
   height: 22px;
   border-radius: 50%;
+  background-color: #333333;
+}
+
+.radio-item__label--disabled::before,
+.radio-item__label--disabled::after {
+  opacity: 0.2;
+}
+
+.radio-item__label--disabled:hover::before {
+  background-color: #f2f2f2;
+}
+
+.radio-item__label--disabled:active::before {
+  background-color: #f2f2f2;
+}
+
+.radio-item__label--disabled:active::after {
   background-color: #333333;
 }
 
