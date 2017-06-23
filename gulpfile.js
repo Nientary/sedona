@@ -57,11 +57,8 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src(["js/blocks/menu.js", "js/blocks/form.js", "js/blocks/map.js"])
-  .pipe(concat("app.js"))
-  .pipe(gulp.dest("build/js"))
+  return gulp.src("js/blocks/*.js")
   .pipe(jsmin())
-  .pipe(rename("app.min.js"))
   .pipe(gulp.dest("build/js"));
 });
 

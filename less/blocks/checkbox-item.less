@@ -43,7 +43,7 @@
   }
 }
 
-.checkbox-item__label:hover:active {
+.checkbox-item__label:active {
   &::before {
     background-color: @input-color-active;
   }
@@ -51,4 +51,20 @@
   .checkbox__icon {
     opacity: 0.3;
   }
+}
+
+.checkbox-item__label--disabled::before {
+  opacity: 0.2;
+}
+
+.checkbox-item__label--disabled .checkbox__icon {
+  opacity: 0.2;
+}
+
+.checkbox-item__label--disabled:hover::before {
+  background-color: #f2f2f2;
+}
+
+.checkbox-item__label--disabled:active .checkbox__icon {
+  opacity: 0.2;
 }
