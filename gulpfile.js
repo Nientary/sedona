@@ -38,12 +38,18 @@ gulp.task("style", function() {
 });
 
 gulp.task("images", function() {
-  return gulp.src("build/img/**/*.{png,jpg,gif}")
+  return gulp.src("build/img/**/*.{png,jpg,jpeg,gif}")
   .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpegtran({progressive: true})
+    imagemin.optipng({optimizationLevel: 1}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.JpegRecompress({
+        loops: 5,
+        min: 65,
+        max: 70,
+        quality:'medium'
+      })
   ]))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("img"));
 });
 
 gulp.task("sprite", function() {
